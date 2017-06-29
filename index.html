@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+==== Código de cajero automático orientado a objetos =====
+@author: Christopher Coria Vásquez.
+@version: 0.1
+@copyright-website: https://www.mastercoria.com/
+============
+Este código es libre, puedes modificarlo, distribuírlo y hacerte de tus propios cambios.
+Si quieres leer más aportes relacionados a la programación y la tecnología, puedes visitar mi blog: https://blog.mastercoria.com/
+-->
+<html>
+	<head>
+		<meta charset="urf-8" />
+		<meta name="author" content="Christopher Coria Vásqurz" />
+		<title>Código de cajero automático por Christopher Coria Vásquez</title>
+		<style type="text/css">
+			#seccion-general{
+				position:relative;
+			}
+			#contenedor-izquierda{
+				position: relative; width: 50%; top: 0; left: 0; float: left; height: 200px;
+			}
+			img{
+			    position:absolute; padding-left: 27%;  
+			}
+			#contenedor-derecha{
+ 				position: relative; width: 50%; top: 0; right: 0; float: right; height: 200px; 
+			}
+			h1{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body id="seccion-general">
+		<h1>Código simple de cajero automático</h1>
+		<hr />
+		<div id="contenedor-izqquierda">
+			<img src="cajero-automatico.jpg" />
+		</div>
+		<div id="contenedor-derecha">
+			<label>Valor:&nbsp;</label><input type="number" placeholder="Inserta número ..." id="numero" />
+			<input type="submit" value="Enviar" id="enviar" /><input type="button" onclick="borrarContenido();" style="display:none;" value="Borrar" id="borrar" /><br /><br />
+
+			<b>Resultados:</b><br /><br />
+			<id id="resultados">
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="dinero.js"></script>
+</html>
